@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7D4ADFA1BC746190075E676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4ADF91BC746190075E676 /* AppDelegate.swift */; };
+		F7D4ADFC1BC746190075E676 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4ADFB1BC746190075E676 /* ViewController.swift */; };
+		F7D4ADFF1BC746190075E676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D4ADFD1BC746190075E676 /* Main.storyboard */; };
+		F7D4AE021BC746190075E676 /* Scheduler_1_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7D4AE001BC746190075E676 /* Scheduler_1_0.xcdatamodeld */; };
+		F7D4AE041BC746190075E676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D4AE031BC746190075E676 /* Assets.xcassets */; };
+		F7D4AE071BC746190075E676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D4AE051BC746190075E676 /* LaunchScreen.storyboard */; };
+		F7D4AE121BC7461A0075E676 /* Scheduler_1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4AE111BC7461A0075E676 /* Scheduler_1_0Tests.swift */; };
+		F7D4AE1D1BC7461A0075E676 /* Scheduler_1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4AE1C1BC7461A0075E676 /* Scheduler_1_0UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7D4AE0E1BC7461A0075E676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7D4ADEE1BC746190075E676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7D4ADF51BC746190075E676;
+			remoteInfo = "Scheduler 1.0";
+		};
+		F7D4AE191BC7461A0075E676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7D4ADEE1BC746190075E676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7D4ADF51BC746190075E676;
+			remoteInfo = "Scheduler 1.0";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F7D4ADF61BC746190075E676 /* Scheduler 1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scheduler 1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D4ADF91BC746190075E676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7D4ADFB1BC746190075E676 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7D4ADFE1BC746190075E676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7D4AE011BC746190075E676 /* Scheduler_1_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Scheduler_1_0.xcdatamodel; sourceTree = "<group>"; };
+		F7D4AE031BC746190075E676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7D4AE061BC746190075E676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7D4AE081BC746190075E676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D4AE0D1BC7461A0075E676 /* Scheduler 1.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scheduler 1.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D4AE111BC7461A0075E676 /* Scheduler_1_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler_1_0Tests.swift; sourceTree = "<group>"; };
+		F7D4AE131BC7461A0075E676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D4AE181BC7461A0075E676 /* Scheduler 1.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scheduler 1.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D4AE1C1BC7461A0075E676 /* Scheduler_1_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler_1_0UITests.swift; sourceTree = "<group>"; };
+		F7D4AE1E1BC7461A0075E676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7D4ADF31BC746190075E676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D4AE0A1BC7461A0075E676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D4AE151BC7461A0075E676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7D4ADED1BC746190075E676 = {
+			isa = PBXGroup;
+			children = (
+				F7D4ADF81BC746190075E676 /* Scheduler 1.0 */,
+				F7D4AE101BC7461A0075E676 /* Scheduler 1.0Tests */,
+				F7D4AE1B1BC7461A0075E676 /* Scheduler 1.0UITests */,
+				F7D4ADF71BC746190075E676 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7D4ADF71BC746190075E676 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7D4ADF61BC746190075E676 /* Scheduler 1.0.app */,
+				F7D4AE0D1BC7461A0075E676 /* Scheduler 1.0Tests.xctest */,
+				F7D4AE181BC7461A0075E676 /* Scheduler 1.0UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7D4ADF81BC746190075E676 /* Scheduler 1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				F7D4ADF91BC746190075E676 /* AppDelegate.swift */,
+				F7D4ADFB1BC746190075E676 /* ViewController.swift */,
+				F7D4ADFD1BC746190075E676 /* Main.storyboard */,
+				F7D4AE031BC746190075E676 /* Assets.xcassets */,
+				F7D4AE051BC746190075E676 /* LaunchScreen.storyboard */,
+				F7D4AE081BC746190075E676 /* Info.plist */,
+				F7D4AE001BC746190075E676 /* Scheduler_1_0.xcdatamodeld */,
+			);
+			path = "Scheduler 1.0";
+			sourceTree = "<group>";
+		};
+		F7D4AE101BC7461A0075E676 /* Scheduler 1.0Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F7D4AE111BC7461A0075E676 /* Scheduler_1_0Tests.swift */,
+				F7D4AE131BC7461A0075E676 /* Info.plist */,
+			);
+			path = "Scheduler 1.0Tests";
+			sourceTree = "<group>";
+		};
+		F7D4AE1B1BC7461A0075E676 /* Scheduler 1.0UITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7D4AE1C1BC7461A0075E676 /* Scheduler_1_0UITests.swift */,
+				F7D4AE1E1BC7461A0075E676 /* Info.plist */,
+			);
+			path = "Scheduler 1.0UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7D4ADF51BC746190075E676 /* Scheduler 1.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7D4AE211BC7461A0075E676 /* Build configuration list for PBXNativeTarget "Scheduler 1.0" */;
+			buildPhases = (
+				F7D4ADF21BC746190075E676 /* Sources */,
+				F7D4ADF31BC746190075E676 /* Frameworks */,
+				F7D4ADF41BC746190075E676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Scheduler 1.0";
+			productName = "Scheduler 1.0";
+			productReference = F7D4ADF61BC746190075E676 /* Scheduler 1.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7D4AE0C1BC7461A0075E676 /* Scheduler 1.0Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7D4AE241BC7461A0075E676 /* Build configuration list for PBXNativeTarget "Scheduler 1.0Tests" */;
+			buildPhases = (
+				F7D4AE091BC7461A0075E676 /* Sources */,
+				F7D4AE0A1BC7461A0075E676 /* Frameworks */,
+				F7D4AE0B1BC7461A0075E676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7D4AE0F1BC7461A0075E676 /* PBXTargetDependency */,
+			);
+			name = "Scheduler 1.0Tests";
+			productName = "Scheduler 1.0Tests";
+			productReference = F7D4AE0D1BC7461A0075E676 /* Scheduler 1.0Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7D4AE171BC7461A0075E676 /* Scheduler 1.0UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7D4AE271BC7461A0075E676 /* Build configuration list for PBXNativeTarget "Scheduler 1.0UITests" */;
+			buildPhases = (
+				F7D4AE141BC7461A0075E676 /* Sources */,
+				F7D4AE151BC7461A0075E676 /* Frameworks */,
+				F7D4AE161BC7461A0075E676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7D4AE1A1BC7461A0075E676 /* PBXTargetDependency */,
+			);
+			name = "Scheduler 1.0UITests";
+			productName = "Scheduler 1.0UITests";
+			productReference = F7D4AE181BC7461A0075E676 /* Scheduler 1.0UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7D4ADEE1BC746190075E676 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Patronus LLC";
+				TargetAttributes = {
+					F7D4ADF51BC746190075E676 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					F7D4AE0C1BC7461A0075E676 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = F7D4ADF51BC746190075E676;
+					};
+					F7D4AE171BC7461A0075E676 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = F7D4ADF51BC746190075E676;
+					};
+				};
+			};
+			buildConfigurationList = F7D4ADF11BC746190075E676 /* Build configuration list for PBXProject "Scheduler 1.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7D4ADED1BC746190075E676;
+			productRefGroup = F7D4ADF71BC746190075E676 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7D4ADF51BC746190075E676 /* Scheduler 1.0 */,
+				F7D4AE0C1BC7461A0075E676 /* Scheduler 1.0Tests */,
+				F7D4AE171BC7461A0075E676 /* Scheduler 1.0UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7D4ADF41BC746190075E676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D4AE071BC746190075E676 /* LaunchScreen.storyboard in Resources */,
+				F7D4AE041BC746190075E676 /* Assets.xcassets in Resources */,
+				F7D4ADFF1BC746190075E676 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D4AE0B1BC7461A0075E676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D4AE161BC7461A0075E676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7D4ADF21BC746190075E676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D4AE021BC746190075E676 /* Scheduler_1_0.xcdatamodeld in Sources */,
+				F7D4ADFC1BC746190075E676 /* ViewController.swift in Sources */,
+				F7D4ADFA1BC746190075E676 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D4AE091BC7461A0075E676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D4AE121BC7461A0075E676 /* Scheduler_1_0Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D4AE141BC7461A0075E676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D4AE1D1BC7461A0075E676 /* Scheduler_1_0UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7D4AE0F1BC7461A0075E676 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7D4ADF51BC746190075E676 /* Scheduler 1.0 */;
+			targetProxy = F7D4AE0E1BC7461A0075E676 /* PBXContainerItemProxy */;
+		};
+		F7D4AE1A1BC7461A0075E676 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7D4ADF51BC746190075E676 /* Scheduler 1.0 */;
+			targetProxy = F7D4AE191BC7461A0075E676 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F7D4ADFD1BC746190075E676 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7D4ADFE1BC746190075E676 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7D4AE051BC746190075E676 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7D4AE061BC746190075E676 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7D4AE1F1BC7461A0075E676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7D4AE201BC7461A0075E676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7D4AE221BC7461A0075E676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Scheduler 1.0/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.patronusllc.Scheduler-1-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F7D4AE231BC7461A0075E676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Scheduler 1.0/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.patronusllc.Scheduler-1-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F7D4AE251BC7461A0075E676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Scheduler 1.0Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.patronusllc.Scheduler-1-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scheduler 1.0.app/Scheduler 1.0";
+			};
+			name = Debug;
+		};
+		F7D4AE261BC7461A0075E676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Scheduler 1.0Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.patronusllc.Scheduler-1-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scheduler 1.0.app/Scheduler 1.0";
+			};
+			name = Release;
+		};
+		F7D4AE281BC7461A0075E676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Scheduler 1.0UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.patronusllc.Scheduler-1-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Scheduler 1.0";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F7D4AE291BC7461A0075E676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Scheduler 1.0UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.patronusllc.Scheduler-1-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Scheduler 1.0";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7D4ADF11BC746190075E676 /* Build configuration list for PBXProject "Scheduler 1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7D4AE1F1BC7461A0075E676 /* Debug */,
+				F7D4AE201BC7461A0075E676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7D4AE211BC7461A0075E676 /* Build configuration list for PBXNativeTarget "Scheduler 1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7D4AE221BC7461A0075E676 /* Debug */,
+				F7D4AE231BC7461A0075E676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F7D4AE241BC7461A0075E676 /* Build configuration list for PBXNativeTarget "Scheduler 1.0Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7D4AE251BC7461A0075E676 /* Debug */,
+				F7D4AE261BC7461A0075E676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F7D4AE271BC7461A0075E676 /* Build configuration list for PBXNativeTarget "Scheduler 1.0UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7D4AE281BC7461A0075E676 /* Debug */,
+				F7D4AE291BC7461A0075E676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7D4AE001BC746190075E676 /* Scheduler_1_0.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7D4AE011BC746190075E676 /* Scheduler_1_0.xcdatamodel */,
+			);
+			currentVersion = F7D4AE011BC746190075E676 /* Scheduler_1_0.xcdatamodel */;
+			path = Scheduler_1_0.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F7D4ADEE1BC746190075E676 /* Project object */;
+}
