@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol AddItemViewControllerDelegate {
+	func controller(controller: AddItemViewController, didAddItem: String)
+}
+
 class AddItemViewController: UIViewController {
 	
 	@IBOutlet var ABlock: UITextField!
@@ -17,14 +21,31 @@ class AddItemViewController: UIViewController {
 	@IBOutlet var EBlock: UITextField!
 	@IBOutlet var FBlock: UITextField!
 	
+	var delegate: AddItemViewControllerDelegate?
+	
 	
 	@IBAction func cancel(sender: AnyObject) {
 		
 	}
 	
 	@IBAction func create(sender: AnyObject) {
+		let ABlockText = self.ABlock.text
+		let BBlockText = self.BBlock.text
+		let CBlockText = self.CBlock.text
+		let DBlockText = self.DBlock.text
+		let EBlockText = self.EBlock.text
+		let FBlockText = self.FBlock.text
 		
+		if let delegate = self.delegate {
+			delegate.controller(self, didAddItem: ABlockText!)
+			delegate.controller(self, didAddItem: BBlockText!)
+			delegate.controller(self, didAddItem: CBlockText!)
+			delegate.controller(self, didAddItem: DBlockText!)
+			delegate.controller(self, didAddItem: EBlockText!)
+			delegate.controller(self, didAddItem: FBlockText!)
+		}
 	}
+	
 	
 	
 	

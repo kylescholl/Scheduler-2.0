@@ -22,8 +22,8 @@ class ViewController: UIViewController {
 	}
 	
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-		if (segue.identifier == "openColor") {
-			let editorViewController = segue.destinationViewController
+		if (segue.identifier == "addItem") {
+			let AddItemViewController = segue.destinationViewController
 		}
 	}
 	
