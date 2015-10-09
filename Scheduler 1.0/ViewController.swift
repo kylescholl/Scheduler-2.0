@@ -10,7 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 	
+	@IBOutlet var editScheduleButton: UIButton!
 	
+	
+	
+	
+	@IBAction func editSchedule(sender: AnyObject) {
+		
+		
+		
+	}
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		if (segue.identifier == "openColor") {
+			let editorViewController = segue.destinationViewController
+		}
+	}
 	
 	@IBAction func textEntered(sender: AnyObject) {
 		

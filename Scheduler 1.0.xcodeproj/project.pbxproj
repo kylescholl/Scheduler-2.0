@@ -15,6 +15,7 @@
 		F7D4AE071BC746190075E676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D4AE051BC746190075E676 /* LaunchScreen.storyboard */; };
 		F7D4AE121BC7461A0075E676 /* Scheduler_1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4AE111BC7461A0075E676 /* Scheduler_1_0Tests.swift */; };
 		F7D4AE1D1BC7461A0075E676 /* Scheduler_1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4AE1C1BC7461A0075E676 /* Scheduler_1_0UITests.swift */; };
+		F7D4AE2B1BC7F8FF0075E676 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4AE2A1BC7F8FF0075E676 /* AddItemViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F7D4AE181BC7461A0075E676 /* Scheduler 1.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scheduler 1.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D4AE1C1BC7461A0075E676 /* Scheduler_1_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler_1_0UITests.swift; sourceTree = "<group>"; };
 		F7D4AE1E1BC7461A0075E676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D4AE2A1BC7F8FF0075E676 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				F7D4ADF91BC746190075E676 /* AppDelegate.swift */,
 				F7D4ADFB1BC746190075E676 /* ViewController.swift */,
+				F7D4AE2A1BC7F8FF0075E676 /* AddItemViewController.swift */,
 				F7D4ADFD1BC746190075E676 /* Main.storyboard */,
 				F7D4AE031BC746190075E676 /* Assets.xcassets */,
 				F7D4AE051BC746190075E676 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7D4AE021BC746190075E676 /* Scheduler_1_0.xcdatamodeld in Sources */,
+				F7D4AE2B1BC7F8FF0075E676 /* AddItemViewController.swift in Sources */,
 				F7D4ADFC1BC746190075E676 /* ViewController.swift in Sources */,
 				F7D4ADFA1BC746190075E676 /* AppDelegate.swift in Sources */,
 			);
