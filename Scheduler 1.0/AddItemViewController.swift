@@ -24,8 +24,8 @@ class AddItemViewController: UIViewController {
 	var delegate: AddItemViewControllerDelegate?
 	
 	
-	@IBAction func cancel(sender: AnyObject) {
-		
+	@IBAction func save(sender: AnyObject) {
+		self.dismissViewControllerAnimated(true, completion: nil)
 	}
 	
 	@IBAction func create(sender: AnyObject) {

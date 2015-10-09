@@ -8,12 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AddItemViewControllerDelegate {
+	
+	// MARK: Add Item View Controller Delegate Methods
+	func controller(controller: AddItemViewController, didAddItem: String) {
+		// Update Data Source
+		//		self.items.append(didAddItem)
+		
+		// Reload Table View
+		//		self.tableView.reloadData()
+		
+		AddItemViewController.create()
+		print(didAddItem)
+		// Dismiss Add Item View Controller
+		self.dismissViewControllerAnimated(true, completion: nil)
+	}
+	
 	
 	@IBOutlet var editScheduleButton: UIButton!
-	
-	
-	
 	
 	@IBAction func editSchedule(sender: AnyObject) {
 		
@@ -22,8 +34,13 @@ class ViewController: UIViewController {
 	}
 	
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-		if (segue.identifier == "addItem") {
-			let AddItemViewController = segue.destinationViewController
+		if segue.identifier == "AddItemViewController" {
+			let navigationController = segue.destinationViewController as? UINavigationController
+			let addItemViewController = navigationController?.topViewController as? AddItemViewController
+			
+			if let viewController = addItemViewController {
+				viewController.delegate = self
+			}
 		}
 	}
 	
