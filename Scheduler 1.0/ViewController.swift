@@ -8,18 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController, AddItemViewControllerDelegate {
+class ViewController: UIViewController, AddItemViewControllerDelegate, UITextFieldDelegate {
 	
 	// MARK: Add Item View Controller Delegate Methods
-	func controller(controller: AddItemViewController, didAddItem: String) {
+	func controller(controller: AddItemViewController, didAddItem: AnyObject) {
 		// Update Data Source
 		//		self.items.append(didAddItem)
 		
 		// Reload Table View
 		//		self.tableView.reloadData()
 		
-		AddItemViewController.create()
-		print(didAddItem)
+		//	let ABlockLabelText = AddItemViewController().ABlock.text!
+		
+		//	print("\(ABlockLabelText)")
+		
+		
+		
+		
+		
+		
 		// Dismiss Add Item View Controller
 		self.dismissViewControllerAnimated(true, completion: nil)
 	}
@@ -33,6 +40,7 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		
 	}
 	
+	//runs when opening AddItemViewController
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 		if segue.identifier == "AddItemViewController" {
 			let navigationController = segue.destinationViewController as? UINavigationController
@@ -46,7 +54,7 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	
 	@IBAction func textEntered(sender: AnyObject) {
 		
-		//
+		
 		
 		
 	}
@@ -57,7 +65,11 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 		print("Storyboard dimmension: 375 x 667");
-		updateSchedule()
+		
+
+		
+		
+		//		updateSchedule()
 		
 /*
 		let defaults = NSUserDefaults.standardUserDefaults()

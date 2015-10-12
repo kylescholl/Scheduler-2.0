@@ -9,48 +9,65 @@
 import UIKit
 
 protocol AddItemViewControllerDelegate {
-	func controller(controller: AddItemViewController, didAddItem: String)
+	func controller(controller: AddItemViewController, didAddItem: AnyObject)
 }
 
-class AddItemViewController: UIViewController {
+class AddItemViewController: UIViewController, UITextFieldDelegate {
 	
-	@IBOutlet var ABlock: UITextField!
-	@IBOutlet var BBlock: UITextField!
-	@IBOutlet var CBlock: UITextField!
-	@IBOutlet var DBlock: UITextField!
-	@IBOutlet var EBlock: UITextField!
-	@IBOutlet var FBlock: UITextField!
+	@IBOutlet var ABlock: UITextField?
+	@IBOutlet var BBlock: UITextField?
+	@IBOutlet var CBlock: UITextField?
+	@IBOutlet var DBlock: UITextField?
+	@IBOutlet var EBlock: UITextField?
+	@IBOutlet var FBlock: UITextField?
 	
 	var delegate: AddItemViewControllerDelegate?
 	
 	
-	@IBAction func save(sender: AnyObject) {
+	@IBAction func save(sender: UIBarButtonItem) {
 		self.dismissViewControllerAnimated(true, completion: nil)
 	}
 	
 	@IBAction func create(sender: AnyObject) {
-		let ABlockText = self.ABlock.text
-		let BBlockText = self.BBlock.text
-		let CBlockText = self.CBlock.text
-		let DBlockText = self.DBlock.text
-		let EBlockText = self.EBlock.text
-		let FBlockText = self.FBlock.text
+		
+		let ABlockText : String = self.ABlock!.text!
+		print("ABlockText: \(ABlockText)")
+		
+		let BBlockText = self.BBlock!.text!
+		print("BBlockText: \(BBlockText)")
+		
+		let CBlockText = self.CBlock!.text!
+		print("CBlockText: \(CBlockText)")
+		
+		let DBlockText = self.DBlock!.text!
+		print("DBlockText: \(DBlockText)")
+		
+		let EBlockText = self.EBlock!.text!
+		print("EBlockText: \(EBlockText)")
+		
+		let FBlockText = self.FBlock!.text!
+		print("FBlockText: \(FBlockText)")
 		
 		if let delegate = self.delegate {
-			delegate.controller(self, didAddItem: ABlockText!)
-			delegate.controller(self, didAddItem: BBlockText!)
-			delegate.controller(self, didAddItem: CBlockText!)
-			delegate.controller(self, didAddItem: DBlockText!)
-			delegate.controller(self, didAddItem: EBlockText!)
-			delegate.controller(self, didAddItem: FBlockText!)
+			delegate.controller(self, didAddItem: ABlockText)
+			delegate.controller(self, didAddItem: BBlockText)
+			delegate.controller(self, didAddItem: CBlockText)
+			delegate.controller(self, didAddItem: DBlockText)
+			delegate.controller(self, didAddItem: EBlockText)
+			delegate.controller(self, didAddItem: FBlockText)
 		}
 	}
 	
 	
 	
 	
-	
-	
+	/*
+	func textFieldShouldReturn(textField: UITextField) -> Bool {
+		//textField.resignFirstResponder()
+		self.view.endEditing(true)
+		return true;
+	}
+	*/
 	
     override func viewDidLoad() {
         super.viewDidLoad()

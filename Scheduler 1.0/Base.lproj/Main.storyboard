@@ -1801,7 +1801,7 @@
                                 <rect key="frame" x="62" y="166" width="250" height="30"/>
                                 <color key="textColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
                                     <action selector="create:" destination="jox-YT-aSj" eventType="editingDidEnd" id="43M-yb-h0U"/>
                                 </connections>
