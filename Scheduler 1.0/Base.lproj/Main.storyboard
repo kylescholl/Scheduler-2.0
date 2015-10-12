@@ -1412,9 +1412,6 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" red="0.99006789289999997" green="0.99528848079999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="editSchedule:" destination="NQj-U2-mXp" eventType="touchUpInside" id="vOA-Tj-vgs"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coding" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uUU-6C-Fes" userLabel="B2 - 1">
                                 <rect key="frame" x="316" y="84" width="45" height="74"/>
@@ -1778,7 +1775,6 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="editScheduleButton" destination="mQD-Dl-a1L" id="wdd-dA-fN9"/>
                         <outletCollection property="aBlockLabelCollection" destination="Xug-nF-QFH" collectionClass="NSMutableArray" id="g1e-0I-o9g"/>
                         <outletCollection property="aBlockLabelCollection" destination="dp8-pf-21q" collectionClass="NSMutableArray" id="8He-S0-Ybs"/>
                         <outletCollection property="aBlockLabelCollection" destination="3mI-vB-qTX" collectionClass="NSMutableArray" id="4xo-Be-DpK"/>

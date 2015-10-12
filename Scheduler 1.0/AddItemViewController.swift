@@ -43,35 +43,39 @@ class AddItemViewController: UIViewController, UITextFieldDelegate {
 		let ABlockText : String = self.ABlock!.text!
 		print("ABlockText: \(ABlockText)")
 		
+		
 		let BBlockText : String = self.BBlock!.text!
 		print("BBlockText: \(BBlockText)")
+		
 		
 		let CBlockText : String = self.CBlock!.text!
 		print("CBlockText: \(CBlockText)")
 		
+		
 		let DBlockText : String = self.DBlock!.text!
 		print("DBlockText: \(DBlockText)")
+		
 		
 		let EBlockText : String = self.EBlock!.text!
 		print("EBlockText: \(EBlockText)")
 		
+		
 		let FBlockText : String = self.FBlock!.text!
 		print("FBlockText: \(FBlockText)")
+		
 		
 		let GBlockText : String = self.GBlock!.text!
 		print("GBlockText: \(GBlockText)")
 		
+		
 		if let delegate = self.delegate {
-			if ABlock?.editing == true {
-				delegate.aBlockController(self, aBlockItem: ABlockText)
-				print("ABlock?.editing == true worked")
-			} else if BBlock?.editing == true {
-				delegate.bBlockController(self, bBlockItem: BBlockText)
-			}
+			delegate.aBlockController(self, aBlockItem: ABlockText)
+			delegate.bBlockController(self, bBlockItem: BBlockText)
 			delegate.cBlockController(self, cBlockItem: CBlockText)
-			print("cBlockController worked (app didn't crash)")
-			
-			//	delegate.myController(self)
+			delegate.dBlockController(self, dBlockItem: DBlockText)
+			delegate.eBlockController(self, eBlockItem: EBlockText)
+			delegate.fBlockController(self, fBlockItem: FBlockText)
+			delegate.gBlockController(self, gBlockItem: GBlockText)
 		}
 		
 		
@@ -99,8 +103,16 @@ class AddItemViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+/*
+		let defaults = NSUserDefaults.standardUserDefaults()
+		ABlock.value = defaults.valueForKey("ABlock")
+		BBlock.value = defaults.valueForKey("BBlock")
+		CBlock.value = defaults.valueForKey("CBlock")
+		DBlock.value = defaults.valueForKey("DBlock")
+		EBlock.value = defaults.valueForKey("EBlock")
+		FBlock.value = defaults.valueForKey("FBlock")
+*/
+}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
