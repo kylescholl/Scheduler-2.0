@@ -23,7 +23,6 @@ class AddItemViewController: UIViewController, UITextFieldDelegate {
 	
 	var delegate: AddItemViewControllerDelegate?
 	
-	
 	@IBAction func save(sender: UIBarButtonItem) {
 		self.dismissViewControllerAnimated(true, completion: nil)
 	}
@@ -58,7 +57,9 @@ class AddItemViewController: UIViewController, UITextFieldDelegate {
 		}
 	}
 	
-	
+	func setText() {
+		
+	}
 	
 	
 	/*

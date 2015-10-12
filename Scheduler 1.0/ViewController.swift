@@ -18,26 +18,19 @@ class ViewController: UIViewController, AddItemViewControllerDelegate, UITextFie
 		// Reload Table View
 		//		self.tableView.reloadData()
 		
-		//	let ABlockLabelText = AddItemViewController().ABlock.text!
 		
-		//	print("\(ABlockLabelText)")
+		//		let ABlockLabelText = AddItemViewController().ABlock!.text!
+		//	let aText = AddItemViewControllerDelegate.controller(didAddItem)
 		
-		
-		
-		
-		
+		//		print("\(ABlockLabelText)")
 		
 		// Dismiss Add Item View Controller
 		self.dismissViewControllerAnimated(true, completion: nil)
 	}
 	
-	
 	@IBOutlet var editScheduleButton: UIButton!
 	
 	@IBAction func editSchedule(sender: AnyObject) {
-		
-		
-		
 	}
 	
 	//runs when opening AddItemViewController
