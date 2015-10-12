@@ -10,28 +10,67 @@ import UIKit
 
 class ViewController: UIViewController, AddItemViewControllerDelegate, UITextFieldDelegate {
 	
-	// MARK: Add Item View Controller Delegate Methods
-	func controller(controller: AddItemViewController, didAddItem: AnyObject) {
-		// Update Data Source
-		//		self.items.append(didAddItem)
+	func aBlockController(aBlockController: AddItemViewController, aBlockItem: String){
 		
-		// Reload Table View
-		//		self.tableView.reloadData()
-		
-		
-		//		let ABlockLabelText = AddItemViewController().ABlock!.text!
-		//	let aText = AddItemViewControllerDelegate.controller(didAddItem)
-		
-		//		print("\(ABlockLabelText)")
-		
-		// Dismiss Add Item View Controller
-		self.dismissViewControllerAnimated(true, completion: nil)
 	}
+	func bBlockController(bBlockController: AddItemViewController, bBlockItem: String){
+		
+	}
+	func cBlockController(cBlockController: AddItemViewController, cBlockItem: String){
+		
+	}
+	func dBlockController(dBlockController: AddItemViewController, dBlockItem: String){
+		
+	}
+	func eBlockController(eBlockController: AddItemViewController, eBlockItem: String){
+		
+	}
+	func fBlockController(fBlockController: AddItemViewController, fBlockItem: String){
+		
+	}
+	
+	func gBlockController(gBlockController: AddItemViewController, gBlockItem: String){
+		
+	}
+	
+	//robotics
+	@IBOutlet var aBlockLabelCollection: [UILabel]!
+	
+	//coding
+	@IBOutlet var bBlockLabelCollection: [UILabel]!
+	
+	//free / college counseling
+	@IBOutlet var cBlockLabelCollection: [UILabel]!
+	
+	//english
+	@IBOutlet var dBlockLabelCollection: [UILabel]!
+	
+	//science
+	@IBOutlet var eBlockLabelCollection: [UILabel]!
+	
+	//math
+	@IBOutlet var fBlockLabelCollection: [UILabel]!
+	
+	//history
+	@IBOutlet var gBlockLabelCollection: [UILabel]!
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	@IBOutlet var editScheduleButton: UIButton!
 	
 	@IBAction func editSchedule(sender: AnyObject) {
 	}
+	
 	
 	//runs when opening AddItemViewController
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -45,11 +84,8 @@ class ViewController: UIViewController, AddItemViewControllerDelegate, UITextFie
 		}
 	}
 	
+	
 	@IBAction func textEntered(sender: AnyObject) {
-		
-		
-		
-		
 	}
 	
 	
@@ -59,7 +95,7 @@ class ViewController: UIViewController, AddItemViewControllerDelegate, UITextFie
 		// Do any additional setup after loading the view, typically from a nib.
 		print("Storyboard dimmension: 375 x 667");
 		
-
+		aBlockLabelCollection[0].text = "test"
 		
 		
 		//		updateSchedule()
