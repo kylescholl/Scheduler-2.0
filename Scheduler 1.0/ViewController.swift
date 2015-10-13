@@ -11,6 +11,11 @@ import UIKit
 class ViewController: UIViewController, AddItemViewControllerDelegate {
 	
 	func aBlockController(aBlockController: AddItemViewController, aBlockItem: String){
+		
+		let defaults = NSUserDefaults.standardUserDefaults()
+		defaults.setValue(aBlockItem, forKey: "ABlock")
+		defaults.synchronize()
+		
 		print("aBlockItem: \(aBlockItem)")
 		
 		let numOfBlocks: Int = (aBlockLabelCollection.count)
@@ -20,57 +25,80 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 			aBlockLabelCollection[index].text = aBlockItem
 			print("index: \(index)")
 		}
-		saveSchedule()
 	}
 	
 	func bBlockController(bBlockController: AddItemViewController, bBlockItem: String){
+		
+		let defaults = NSUserDefaults.standardUserDefaults()
+		defaults.setValue(bBlockItem, forKey: "BBlock")
+		defaults.synchronize()
+		
 		let numOfBlocks: Int = bBlockLabelCollection.count
 		for index in 0..<numOfBlocks {
 			bBlockLabelCollection[index].text = bBlockItem
 		}
-		saveSchedule()
 	}
 	
 	func cBlockController(cBlockController: AddItemViewController, cBlockItem: String){
+		
+		let defaults = NSUserDefaults.standardUserDefaults()
+		defaults.setValue(cBlockItem, forKey: "CBlock")
+		defaults.synchronize()
+		
 		let numOfBlocks: Int = cBlockLabelCollection.count
 		print("numOfABlocks: \(numOfBlocks)")
 		
 		for index in 0..<numOfBlocks {
 			cBlockLabelCollection[index].text = cBlockItem
 		}
-		saveSchedule()
 	}
 	
 	func dBlockController(dBlockController: AddItemViewController, dBlockItem: String){
+		
+		let defaults = NSUserDefaults.standardUserDefaults()
+		defaults.setValue(dBlockItem, forKey: "DBlock")
+		defaults.synchronize()
+		
 		let numOfBlocks: Int = dBlockLabelCollection.count
 		for index in 0..<numOfBlocks {
 			dBlockLabelCollection[index].text = dBlockItem
 		}
-		saveSchedule()
 	}
 	
 	func eBlockController(eBlockController: AddItemViewController, eBlockItem: String){
+		
+		let defaults = NSUserDefaults.standardUserDefaults()
+		defaults.setValue(eBlockItem, forKey: "EBlock")
+		defaults.synchronize()
+		
 		let numOfBlocks: Int = eBlockLabelCollection.count
 		for index in 0..<numOfBlocks {
 			eBlockLabelCollection[index].text = eBlockItem
 		}
-		saveSchedule()
 	}
 	
 	func fBlockController(fBlockController: AddItemViewController, fBlockItem: String){
+		
+		let defaults = NSUserDefaults.standardUserDefaults()
+		defaults.setValue(fBlockItem, forKey: "FBlock")
+		defaults.synchronize()
+		
 		let numOfBlocks: Int = fBlockLabelCollection.count
 		for index in 0..<numOfBlocks {
 			fBlockLabelCollection[index].text = fBlockItem
 		}
-		saveSchedule()
 	}
 	
 	func gBlockController(gBlockController: AddItemViewController, gBlockItem: String){
+		
+		let defaults = NSUserDefaults.standardUserDefaults()
+		defaults.setValue(gBlockItem, forKey: "GBlock")
+		defaults.synchronize()
+		
 		let numOfBlocks: Int = gBlockLabelCollection.count
 		for index in 0..<numOfBlocks {
 			gBlockLabelCollection[index].text = gBlockItem
 		}
-		saveSchedule()
 	}
 	
 	
@@ -109,91 +137,60 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	}
 	
 	func saveSchedule() {
-		
-		let aBlockDefaults = NSKeyedArchiver.archivedDataWithRootObject(aBlockLabelCollection)
-		NSUserDefaults.standardUserDefaults().setObject(aBlockDefaults, forKey: "ABlock")
-		
-		let bBlockDefaults = NSKeyedArchiver.archivedDataWithRootObject(bBlockLabelCollection)
-		NSUserDefaults.standardUserDefaults().setObject(bBlockDefaults, forKey: "BBlock")
-		
-		let cBlockDefaults = NSKeyedArchiver.archivedDataWithRootObject(cBlockLabelCollection)
-		NSUserDefaults.standardUserDefaults().setObject(cBlockDefaults, forKey: "CBlock")
-		
-		let dBlockDefaults = NSKeyedArchiver.archivedDataWithRootObject(dBlockLabelCollection)
-		NSUserDefaults.standardUserDefaults().setObject(dBlockDefaults, forKey: "DBlock")
-		
-		let eBlockDefaults = NSKeyedArchiver.archivedDataWithRootObject(eBlockLabelCollection)
-		NSUserDefaults.standardUserDefaults().setObject(eBlockDefaults, forKey: "EBlock")
-		
-		let fBlockDefaults = NSKeyedArchiver.archivedDataWithRootObject(fBlockLabelCollection)
-		NSUserDefaults.standardUserDefaults().setObject(fBlockDefaults, forKey: "FBlock")
-		
-		let gBlockDefaults = NSKeyedArchiver.archivedDataWithRootObject(gBlockLabelCollection)
-		NSUserDefaults.standardUserDefaults().setObject(gBlockDefaults, forKey: "GBlock")
 	}
 	
 	func loadSchedule(){
 		
-		// Each key for arrays
-		let aBlockDefaults = NSUserDefaults.standardUserDefaults().objectForKey("ABlock") as? String
-		let bBlockDefaults = NSUserDefaults.standardUserDefaults().objectForKey("BBlock") as? String
-		let cBlockDefaults = NSUserDefaults.standardUserDefaults().objectForKey("CBlock") as? String
-		let dBlockDefaults = NSUserDefaults.standardUserDefaults().objectForKey("DBlock") as? String
-		let eBlockDefaults = NSUserDefaults.standardUserDefaults().objectForKey("EBlock") as? String
-		let fBlockDefaults = NSUserDefaults.standardUserDefaults().objectForKey("FBlock") as? String
-		let gBlockDefaults = NSUserDefaults.standardUserDefaults().objectForKey("GBlock") as? String
+		let defaults = NSUserDefaults.standardUserDefaults()
 		
 		// Last indexes of each array
-		let aLastIndex = aBlockLabelCollection.endIndex
-		let bLastIndex = bBlockLabelCollection.endIndex
-		let cLastIndex = cBlockLabelCollection.endIndex
-		let dLastIndex = dBlockLabelCollection.endIndex
-		let eLastIndex = eBlockLabelCollection.endIndex
-		let fLastIndex = fBlockLabelCollection.endIndex
-		let gLastIndex = gBlockLabelCollection.endIndex
+		let aLastIndex = aBlockLabelCollection.count
+		let bLastIndex = bBlockLabelCollection.count
+		let cLastIndex = cBlockLabelCollection.count
+		let dLastIndex = dBlockLabelCollection.count
+		let eLastIndex = eBlockLabelCollection.count
+		let fLastIndex = fBlockLabelCollection.count
+		let gLastIndex = gBlockLabelCollection.count
 		
 		// A
-		for index in 0...aLastIndex {
-			aBlockLabelCollection[index].text = aBlockDefaults
+		for index in 0..<aLastIndex {
+			aBlockLabelCollection[index].text = defaults.stringForKey("ABlock")
 		}
-		
+
 		// B
-		for index in 0...bLastIndex {
-			bBlockLabelCollection[index].text = bBlockDefaults
+		for index in 0..<bLastIndex {
+			bBlockLabelCollection[index].text = defaults.stringForKey("BBlock")
 		}
 		
 		// C
-		for index in 0...cLastIndex {
-			cBlockLabelCollection[index].text = cBlockDefaults
+		for index in 0..<cLastIndex {
+			cBlockLabelCollection[index].text = defaults.stringForKey("CBlock")
 		}
 		
 		// D
-		for index in 0...dLastIndex {
-			dBlockLabelCollection[index].text = dBlockDefaults
+		for index in 0..<dLastIndex {
+			dBlockLabelCollection[index].text = defaults.stringForKey("DBlock")
 		}
 		
 		// E
-		for index in 0...eLastIndex {
-			eBlockLabelCollection[index].text = eBlockDefaults
+		for index in 0..<eLastIndex {
+			eBlockLabelCollection[index].text = defaults.stringForKey("EBlock")
 		}
 		
 		// F
-		for index in 0...fLastIndex {
-			fBlockLabelCollection[index].text = fBlockDefaults
+		for index in 0..<fLastIndex {
+			fBlockLabelCollection[index].text = defaults.stringForKey("FBlock")
 		}
 		
 		// G
-		for index in 0...gLastIndex {
-			gBlockLabelCollection[index].text = gBlockDefaults
+		for index in 0..<gLastIndex {
+			gBlockLabelCollection[index].text = defaults.stringForKey("GBlock")
 		}
 	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
-		// Storage
-		//	loadSchedule()
-		
+		loadSchedule()
 	}
 	
 	override func didReceiveMemoryWarning() {
