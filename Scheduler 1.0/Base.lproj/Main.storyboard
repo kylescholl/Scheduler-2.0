@@ -1767,6 +1767,11 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="WoB-ug-ObM">
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="QXe-8e-ayR">
+                            <connections>
+                                <action selector="clearSchedule:" destination="NQj-U2-mXp" id="KvJ-3T-DsO"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="GTd-ff-qBZ">
                             <connections>
                                 <segue destination="iZX-Yo-lsa" kind="presentation" identifier="AddItemViewController" id="4RY-nw-ARt"/>

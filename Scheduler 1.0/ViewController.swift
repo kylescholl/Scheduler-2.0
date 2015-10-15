@@ -101,7 +101,6 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		}
 	}
 	
-	
 	//robotics
 	@IBOutlet var aBlockLabelCollection: [UILabel]!
 	
@@ -122,6 +121,105 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	
 	//history
 	@IBOutlet var gBlockLabelCollection: [UILabel]!
+	
+
+/*
+	func globals() -> AnyObject {
+		let aNumIndex: Int = aBlockLabelCollection.count
+		let bNumIndex: Int = bBlockLabelCollection.count
+		let cNumIndex: Int = cBlockLabelCollection.count
+		let dNumIndex: Int = dBlockLabelCollection.count
+		let eNumIndex: Int = eBlockLabelCollection.count
+		let fNumIndex: Int = fBlockLabelCollection.count
+		let gNumIndex: Int = gBlockLabelCollection.count
+		
+		print(aNumIndex)
+		print(bNumIndex)
+		print(cNumIndex)
+		print(dNumIndex)
+		print(eNumIndex)
+		print(fNumIndex)
+		print(gNumIndex)
+		
+		return nil
+	}
+*/
+	
+	func setLabelText(someString: String) {
+		
+		let aNumIndex: Int = aBlockLabelCollection.count
+		let bNumIndex: Int = bBlockLabelCollection.count
+		let cNumIndex: Int = cBlockLabelCollection.count
+		let dNumIndex: Int = dBlockLabelCollection.count
+		let eNumIndex: Int = eBlockLabelCollection.count
+		let fNumIndex: Int = fBlockLabelCollection.count
+		let gNumIndex: Int = gBlockLabelCollection.count
+		
+		// A
+		for index in 0..<aNumIndex {
+			aBlockLabelCollection[index].text = someString
+		}
+		
+		// B
+		for index in 0..<bNumIndex {
+			bBlockLabelCollection[index].text = someString
+		}
+		
+		// C
+		for index in 0..<cNumIndex {
+			cBlockLabelCollection[index].text = someString
+		}
+		
+		// D
+		for index in 0..<dNumIndex {
+			dBlockLabelCollection[index].text = someString
+		}
+		
+		// E
+		for index in 0..<eNumIndex {
+			eBlockLabelCollection[index].text = someString
+		}
+		
+		// F
+		for index in 0..<fNumIndex {
+			fBlockLabelCollection[index].text = someString
+		}
+		
+		// G
+		for index in 0..<gNumIndex {
+			gBlockLabelCollection[index].text = someString
+		}
+	}
+	
+	
+	@IBAction func clearSchedule(sender: UIBarButtonItem) {
+		//Create the AlertController
+		let actionSheetController: UIAlertController = UIAlertController(title: "Clear",
+			message: "Are you sure that you want to clear the schedule?",
+			preferredStyle: .Alert)
+		
+		//Create and add the Cancel action
+		let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .Cancel) { action -> Void in
+			//Do some stuff
+		}
+		actionSheetController.addAction(cancelAction)
+		
+		//Create and add an option action
+		let nextAction: UIAlertAction = UIAlertAction(title: "Yes, clear", style: UIAlertActionStyle.Default) { action -> Void in
+			self.setLabelText("")
+			
+		}
+		actionSheetController.addAction(nextAction)
+	
+	//Change the text color
+		//self.window?.tintColor = UIColor.orangeColor()
+	
+	//Present the AlertController
+	self.presentViewController(actionSheetController, animated: true, completion: nil)
+		
+	}
+	
+	
 	
 	
 	//runs when opening AddItemViewController
@@ -144,46 +242,46 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		let defaults = NSUserDefaults.standardUserDefaults()
 		
 		// Last indexes of each array
-		let aLastIndex = aBlockLabelCollection.count
-		let bLastIndex = bBlockLabelCollection.count
-		let cLastIndex = cBlockLabelCollection.count
-		let dLastIndex = dBlockLabelCollection.count
-		let eLastIndex = eBlockLabelCollection.count
-		let fLastIndex = fBlockLabelCollection.count
-		let gLastIndex = gBlockLabelCollection.count
+		let aNumIndex = aBlockLabelCollection.count
+		let bNumIndex = bBlockLabelCollection.count
+		let cNumIndex = cBlockLabelCollection.count
+		let dNumIndex = dBlockLabelCollection.count
+		let eNumIndex = eBlockLabelCollection.count
+		let fNumIndex = fBlockLabelCollection.count
+		let gNumIndex = gBlockLabelCollection.count
 		
 		// A
-		for index in 0..<aLastIndex {
+		for index in 0..<aNumIndex {
 			aBlockLabelCollection[index].text = defaults.stringForKey("ABlock")
 		}
 
 		// B
-		for index in 0..<bLastIndex {
+		for index in 0..<bNumIndex {
 			bBlockLabelCollection[index].text = defaults.stringForKey("BBlock")
 		}
 		
 		// C
-		for index in 0..<cLastIndex {
+		for index in 0..<cNumIndex {
 			cBlockLabelCollection[index].text = defaults.stringForKey("CBlock")
 		}
 		
 		// D
-		for index in 0..<dLastIndex {
+		for index in 0..<dNumIndex {
 			dBlockLabelCollection[index].text = defaults.stringForKey("DBlock")
 		}
 		
 		// E
-		for index in 0..<eLastIndex {
+		for index in 0..<eNumIndex {
 			eBlockLabelCollection[index].text = defaults.stringForKey("EBlock")
 		}
 		
 		// F
-		for index in 0..<fLastIndex {
+		for index in 0..<fNumIndex {
 			fBlockLabelCollection[index].text = defaults.stringForKey("FBlock")
 		}
 		
 		// G
-		for index in 0..<gLastIndex {
+		for index in 0..<gNumIndex {
 			gBlockLabelCollection[index].text = defaults.stringForKey("GBlock")
 		}
 	}
