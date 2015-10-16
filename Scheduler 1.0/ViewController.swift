@@ -123,27 +123,11 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	@IBOutlet var gBlockLabelCollection: [UILabel]!
 	
 
-/*
-	func globals() -> AnyObject {
-		let aNumIndex: Int = aBlockLabelCollection.count
-		let bNumIndex: Int = bBlockLabelCollection.count
-		let cNumIndex: Int = cBlockLabelCollection.count
-		let dNumIndex: Int = dBlockLabelCollection.count
-		let eNumIndex: Int = eBlockLabelCollection.count
-		let fNumIndex: Int = fBlockLabelCollection.count
-		let gNumIndex: Int = gBlockLabelCollection.count
-		
-		print(aNumIndex)
-		print(bNumIndex)
-		print(cNumIndex)
-		print(dNumIndex)
-		print(eNumIndex)
-		print(fNumIndex)
-		print(gNumIndex)
-		
-		return nil
-	}
-*/
+	
+	
+	
+	
+
 	
 	func setLabelText(someString: String) {
 		
