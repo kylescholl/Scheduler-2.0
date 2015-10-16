@@ -211,7 +211,7 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		}
 		actionSheetController.addAction(nextAction)
 	
-	//Change the text color
+	//Change the text color——not working for me
 		//self.window?.tintColor = UIColor.orangeColor()
 	
 	//Present the AlertController
