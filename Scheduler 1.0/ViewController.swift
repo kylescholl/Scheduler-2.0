@@ -101,29 +101,76 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		}
 	}
 	
-	//robotics
+	
+	
+	
+					// OUTLETS //
+	
+		// LETTER BLOCKS (diagonal) //
+	
+	// Robotics
 	@IBOutlet var aBlockLabelCollection: [UILabel]!
 	
-	//coding
+	// Coding
 	@IBOutlet var bBlockLabelCollection: [UILabel]!
 	
-	//free / college counseling
+	// Free / college counseling
 	@IBOutlet var cBlockLabelCollection: [UILabel]!
 	
-	//english
+	// English
 	@IBOutlet var dBlockLabelCollection: [UILabel]!
 	
-	//science
+	// Science
 	@IBOutlet var eBlockLabelCollection: [UILabel]!
 	
-	//math
+	// Math
 	@IBOutlet var fBlockLabelCollection: [UILabel]!
 	
-	//history
+	// History
 	@IBOutlet var gBlockLabelCollection: [UILabel]!
 	
-
 	
+		// DAY # COLLECTIONS (vertical) //
+	
+	// Day 1
+	@IBOutlet var dayOneGroup: [UILabel]!
+	
+	// Day 2
+	@IBOutlet var dayTwoGroup: [UILabel]!
+	
+	// Day 3
+	@IBOutlet var dayThreeGroup: [UILabel]!
+	
+	
+	
+	
+	
+	
+	
+	//
+	//	HIGHLIGHT ALL BLOCKS ON THE DAY CLICKED
+	//		THE DAY NUMBERS ARE NOW BUTTONS
+	//
+	
+	
+	// BUTTON OUTLETS
+	
+	@IBOutlet var dayOneButton: UIButton!
+	
+	@IBOutlet var dayTwoButton: UIButton!
+	
+	@IBOutlet var dayThreeButton: UIButton!
+	
+	@IBOutlet var dayFourButton: UIButton!
+	
+	@IBOutlet var dayFiveButton: UIButton!
+	
+	@IBOutlet var daySixButton: UIButton!
+	
+	@IBOutlet var daySevenButton: UIButton!
+	
+	
+	// BUTTON FUNCTION(S)
 	
 	
 	
