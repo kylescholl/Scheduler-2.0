@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Scheduler 1.0
+//  Scheduler 2.0
 //
 //  Created by Kyle Scholl on 10/8/15.
 //  Copyright © 2015 Patronus LLC. All rights reserved.
@@ -141,16 +141,17 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	// Day 3
 	@IBOutlet var dayThreeGroup: [UILabel]!
 	
+	// Day 4
+	@IBOutlet var dayFourGroup: [UILabel]!
 	
+	// Day 5
+	@IBOutlet var dayFiveGroup: [UILabel]!
 	
+	// Day 6
+	@IBOutlet var daySixGroup: [UILabel]!
 	
-	
-	
-	
-	//
-	//	HIGHLIGHT ALL BLOCKS ON THE DAY CLICKED
-	//		THE DAY NUMBERS ARE NOW BUTTONS
-	//
+	// Day 7
+	@IBOutlet var daySevenGroup: [UILabel]!
 	
 	
 	// BUTTON OUTLETS
@@ -172,10 +173,46 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	
 	// BUTTON FUNCTION(S)
 	
+	@IBAction func highlightDaySelected(sender: UIButton) {
+		
+		let dayOneNumIndex: Int = dayOneGroup.count
+		let dayTwoNumIndex: Int = dayTwoGroup.count
+		let dayThreeNumIndex: Int = dayThreeGroup.count
+		let dayFourNumIndex: Int = dayFourGroup.count
+		let dayFiveNumIndex: Int = dayFiveGroup.count
+		let daySixNumIndex: Int = daySixGroup.count
+		let daySevenNumIndex: Int = daySevenGroup.count
+		
+		var currentDayIndex: Int
+		
+		let tagText: String = String(sender.tag)
+		if (tagText == "1") {
+			currentDayIndex = dayOneNumIndex
+		}
+		
+		
+		let tag = sender.tag
+		switch tag {
+		case 1:
+			currentDayIndex = dayOneNumIndex
+			for index in 0..<currentDayIndex {
+				dayOneGroup[index].highlighted = true
+			}
+			print("Day 1 pressed")
+		default:
+			print("default")
+		}
+	}
+	
+	
+	
 	
 	
 
-	
+	// SETS THE TEXT FOR EACH BLOCK (all identical 
+	// b/c of only one parameter) ACCORDING TO WHAT 
+	// IS PASSED INTO THE FUNCTION.
+		// (used when clearing all of the text)
 	func setLabelText(someString: String) {
 		
 		let aNumIndex: Int = aBlockLabelCollection.count
@@ -222,7 +259,7 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		}
 	}
 	
-	
+	// Clears the schedule
 	@IBAction func clearSchedule(sender: UIBarButtonItem) {
 		//Create the AlertController
 		let actionSheetController: UIAlertController = UIAlertController(title: "Clear",
@@ -247,7 +284,6 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	
 	//Present the AlertController
 	self.presentViewController(actionSheetController, animated: true, completion: nil)
-		
 	}
 	
 	

@@ -1,6 +1,6 @@
 //
 //  AddItemViewController.swift
-//  Scheduler 1.0
+//  Scheduler 2.0
 //
 //  Created by Kyle Scholl on 10/9/15.
 //  Copyright © 2015 Patronus LLC. All rights reserved.
