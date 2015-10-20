@@ -101,9 +101,6 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		}
 	}
 	
-	
-	
-	
 					// OUTLETS //
 	
 		// LETTER BLOCKS (diagonal) //
@@ -130,7 +127,7 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	@IBOutlet var gBlockLabelCollection: [UILabel]!
 	
 	
-		// DAY # COLLECTIONS (vertical) //
+		// DAY COLLECTIONS (vertical) //
 	
 	// Day 1
 	@IBOutlet var dayOneGroup: [UILabel]!
@@ -154,7 +151,7 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	@IBOutlet var daySevenGroup: [UILabel]!
 	
 	
-	// BUTTON OUTLETS
+		// BUTTON OUTLETS
 	
 	@IBOutlet var dayOneButton: UIButton!
 	
@@ -171,7 +168,7 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	@IBOutlet var daySevenButton: UIButton!
 	
 	
-	// BUTTON FUNCTION(S)
+		// BUTTON FUNCTION(S)
 	
 	@IBAction func highlightDaySelected(sender: UIButton) {
 		
@@ -185,34 +182,139 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		
 		var currentDayIndex: Int
 		
-		let tagText: String = String(sender.tag)
-		if (tagText == "1") {
-			currentDayIndex = dayOneNumIndex
-		}
+		let niceBlue: UIColor = UIColor(red: 0, green: 128, blue: 255, alpha: 1)
 		
+		setLabelColorsToDefault(niceBlue)
 		
 		let tag = sender.tag
 		switch tag {
 		case 1:
 			currentDayIndex = dayOneNumIndex
 			for index in 0..<currentDayIndex {
-				dayOneGroup[index].highlighted = true
+				
+				dayOneGroup[index].textColor = UIColor.whiteColor()
+				dayOneGroup[index].backgroundColor = niceBlue
+				
+				print("tag: \(tag)")
 			}
 			print("Day 1 pressed")
+			
+		case 2:
+			currentDayIndex = dayTwoNumIndex
+			for index in 0..<currentDayIndex {
+				
+				dayTwoGroup[index].textColor = UIColor.whiteColor()
+				dayTwoGroup[index].backgroundColor = niceBlue
+				
+				print("tag: \(tag)")
+			}
+			
+		case 3:
+			currentDayIndex = dayThreeNumIndex
+			for index in 0..<currentDayIndex {
+				
+				dayThreeGroup[index].textColor = UIColor.whiteColor()
+				dayThreeGroup[index].backgroundColor = niceBlue
+				
+				print("tag: \(tag)")
+			}
+		
+		case 4:
+			currentDayIndex = dayFourNumIndex
+			for index in 0..<currentDayIndex {
+				
+				dayFourGroup[index].textColor = UIColor.whiteColor()
+				dayFourGroup[index].backgroundColor = niceBlue
+				
+				print("tag: \(tag)")
+			}
+		
+		case 5:
+			currentDayIndex = dayFiveNumIndex
+			for index in 0..<currentDayIndex {
+				
+				dayFiveGroup[index].textColor = UIColor.whiteColor()
+				dayFiveGroup[index].backgroundColor = niceBlue
+				
+				print("tag: \(tag)")
+			}
+		
+		case 6:
+			currentDayIndex = daySixNumIndex
+			for index in 0..<currentDayIndex {
+				
+				daySixGroup[index].textColor = UIColor.whiteColor()
+				daySixGroup[index].backgroundColor = niceBlue
+				
+				print("tag: \(tag)")
+			}
+		
+		case 7:
+			currentDayIndex = daySevenNumIndex
+			for index in 0..<currentDayIndex {
+				
+				daySevenGroup[index].textColor = UIColor.whiteColor()
+				daySevenGroup[index].backgroundColor = niceBlue
+				
+				print("tag: \(tag)")
+			}
 		default:
 			print("default")
 		}
 	}
 	
 	
+	// Sets all of the labels to be white with blue text
+	func setLabelColorsToDefault(customBlue: UIColor) {
+		
+		let dayOneNumIndex: Int = dayOneGroup.count
+		let dayTwoNumIndex: Int = dayTwoGroup.count
+		let dayThreeNumIndex: Int = dayThreeGroup.count
+		let dayFourNumIndex: Int = dayFourGroup.count
+		let dayFiveNumIndex: Int = dayFiveGroup.count
+		let daySixNumIndex: Int = daySixGroup.count
+		let daySevenNumIndex: Int = daySevenGroup.count
+		
+		for index in 0..<dayOneNumIndex {
+			dayOneGroup[index].textColor = customBlue
+			dayOneGroup[index].backgroundColor = UIColor.whiteColor()
+		}
+		
+		for index in 0..<dayTwoNumIndex {
+			dayTwoGroup[index].textColor = customBlue
+			dayTwoGroup[index].backgroundColor = UIColor.whiteColor()
+		}
+		
+		for index in 0..<dayThreeNumIndex {
+			dayThreeGroup[index].textColor = customBlue
+			dayThreeGroup[index].backgroundColor = UIColor.whiteColor()
+		}
+		
+		for index in 0..<dayFourNumIndex {
+			dayFourGroup[index].textColor = customBlue
+			dayFourGroup[index].backgroundColor = UIColor.whiteColor()
+		}
+		
+		for index in 0..<dayFiveNumIndex {
+			dayFiveGroup[index].textColor = customBlue
+			dayFiveGroup[index].backgroundColor = UIColor.whiteColor()
+		}
+		
+		for index in 0..<daySixNumIndex {
+			daySixGroup[index].textColor = customBlue
+			daySixGroup[index].backgroundColor = UIColor.whiteColor()
+		}
+		
+		for index in 0..<daySevenNumIndex {
+			daySevenGroup[index].textColor = customBlue
+			daySevenGroup[index].backgroundColor = UIColor.whiteColor()
+		}
+	}
 	
 	
 	
-
-	// SETS THE TEXT FOR EACH BLOCK (all identical 
-	// b/c of only one parameter) ACCORDING TO WHAT 
-	// IS PASSED INTO THE FUNCTION.
-		// (used when clearing all of the text)
+	
+	// used for clearing all blocks
 	func setLabelText(someString: String) {
 		
 		let aNumIndex: Int = aBlockLabelCollection.count
@@ -286,9 +388,6 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	self.presentViewController(actionSheetController, animated: true, completion: nil)
 	}
 	
-	
-	
-	
 	//runs when opening AddItemViewController
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 		if segue.identifier == "AddItemViewController" {
@@ -299,9 +398,6 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 				viewController.delegate = self
 			}
 		}
-	}
-	
-	func saveSchedule() {
 	}
 	
 	func loadSchedule(){
@@ -361,32 +457,6 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 	}
-	
-	
-	/*
-	@IBAction func showAlertTapped(sender: AnyObject) {
-	//Create the AlertController
-	let actionSheetController: UIAlertController = UIAlertController(title: "Classes",
-	message: "A block: Robotics –––– ran into problems –> fix later",
-	preferredStyle: .Alert)
-	
-	//Create and add the Cancel action
-	let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .Cancel) { action -> Void in
-	//Do some stuff
-	}
-	actionSheetController.addAction(cancelAction)
-	//Create and add an option action
-	//let nextAction: UIAlertAction = UIAlertAction(title: "Next", style: .Default) { action -> Void in
-	//Do some other stuff
-	}
-	
-	//Change the text color
-	//self.window?.tintColor = UIColor.orangeColor()
-	
-	//Present the AlertController
-	self.presentViewController(actionSheetController, animated: true, completion: nil)
-	}
-	*/
 }
 
 
