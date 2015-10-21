@@ -264,6 +264,15 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	}
 	
 	
+	let colors = Colors()
+	func refresh() {
+		view.backgroundColor = UIColor.clearColor()
+		let backgroundLayer = colors.gl
+		backgroundLayer.frame = view.frame
+		view.layer.insertSublayer(backgroundLayer, atIndex: 0)
+	}
+	
+	
 	// Sets all of the labels to be white with blue text
 	func setLabelColorsToDefault(customBlue: UIColor) {
 		
@@ -277,7 +286,13 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		
 		for index in 0..<dayOneNumIndex {
 			dayOneGroup[index].textColor = customBlue
-			dayOneGroup[index].backgroundColor = UIColor.whiteColor()
+			//dayOneGroup[index].backgroundColor = UIColor.whiteColor()
+			
+				// Attempt at a gradient --> nothing happens...hmmm
+			dayOneGroup[index].backgroundColor = UIColor.clearColor()
+			let backgroundLayer = colors.gl
+			backgroundLayer.frame = dayOneGroup[index].frame
+			dayOneGroup[index].layer.insertSublayer(backgroundLayer, atIndex: 0)
 		}
 		
 		for index in 0..<dayTwoNumIndex {
