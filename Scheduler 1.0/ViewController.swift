@@ -286,26 +286,12 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		
 		for index in 0..<dayOneNumIndex {
 			dayOneGroup[index].textColor = customBlue
-			//dayOneGroup[index].backgroundColor = UIColor.whiteColor()
 			
-			//	view.backgroundColor = UIColor.clearColor()
-			//	let backgroundLayer = colors.gl
-			//	backgroundLayer.frame = view.frame
-			//	view.layer.insertSublayer(backgroundLayer, atIndex: 0)
-			print("Did the gradient work?!")
+			//	dayOneView.alpha = 0.2
+			//	dayTwoView.alpha = 0.2
+			//	dayThreeView.alpha = 0.2
 			
-			let black = UIColor.blackColor()
-			let dim = black.colorWithAlphaComponent(0.00001)
-			view.backgroundColor = dim
 			
-/*
-				// Attempt at a gradient --> nothing happens...hmmm
-			//dayOneGroup[index].backgroundColor = UIColor.clearColor()
-			dayOneGroup[index].backgroundColor = colors.gl
-			let backgroundLayer = colors.gl
-			backgroundLayer.frame = dayOneGroup[index].frame
-			dayOneGroup[index].layer.insertSublayer(backgroundLayer, atIndex: 0)
-*/
 		}
 		
 		for index in 0..<dayTwoNumIndex {
