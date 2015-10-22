@@ -7,6 +7,7 @@
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDZ-Zs-ZON" userLabel="A0 - Time">
-                                <rect key="frame" x="6" y="72" width="40" height="16"/>
+                                <rect key="frame" x="6" y="72" width="44" height="16"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1326,74 +1327,18 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbI-4H-e92">
-                                <rect key="frame" x="320" y="72" width="45" height="16"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTW-42-Pcb">
+                                <rect key="frame" x="50" y="72" width="45" height="16"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="45" id="FtW-F6-lXa"/>
-                                    <constraint firstAttribute="height" constant="16" id="P38-8b-czD"/>
+                                    <constraint firstAttribute="height" constant="16" id="Qer-pH-hf1"/>
+                                    <constraint firstAttribute="width" constant="45" id="YM9-pP-8LF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
-                                <state key="normal" title="7">
+                                <state key="normal" title="1">
                                     <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="xwt-LY-Brc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nko-LI-yf7">
-                                <rect key="frame" x="275" y="72" width="45" height="16"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="16" id="LNg-hg-9IS"/>
-                                    <constraint firstAttribute="width" constant="45" id="uUR-B1-nLw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
-                                <state key="normal" title="6">
-                                    <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="WeW-cY-n9r"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5D-A8-9eV">
-                                <rect key="frame" x="230" y="72" width="45" height="16"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="16" id="NvK-6C-KrQ"/>
-                                    <constraint firstAttribute="width" constant="45" id="Vx7-yp-Y22"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
-                                <state key="normal" title="5">
-                                    <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="mMS-tC-yQF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQG-ff-rDd">
-                                <rect key="frame" x="185" y="72" width="45" height="16"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="16" id="UM0-Wm-zwd"/>
-                                    <constraint firstAttribute="width" constant="45" id="xh9-vk-lRk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
-                                <state key="normal" title="4">
-                                    <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="aKY-Db-IhE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8g-u7-4TM">
-                                <rect key="frame" x="140" y="72" width="45" height="16"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="16" id="eG0-CX-hTJ"/>
-                                    <constraint firstAttribute="width" constant="45" id="tM9-t6-TB4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
-                                <state key="normal" title="3">
-                                    <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="xUt-lf-4rj"/>
+                                    <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="SCu-Hk-tzM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oc-G8-0R2">
@@ -1410,18 +1355,74 @@
                                     <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="D7A-UP-wzM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTW-42-Pcb">
-                                <rect key="frame" x="50" y="72" width="45" height="16"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8g-u7-4TM">
+                                <rect key="frame" x="140" y="72" width="45" height="16"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="16" id="Qer-pH-hf1"/>
-                                    <constraint firstAttribute="width" constant="45" id="YM9-pP-8LF"/>
+                                    <constraint firstAttribute="height" constant="16" id="eG0-CX-hTJ"/>
+                                    <constraint firstAttribute="width" constant="45" id="tM9-t6-TB4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
-                                <state key="normal" title="1">
+                                <state key="normal" title="3">
                                     <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="SCu-Hk-tzM"/>
+                                    <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="xUt-lf-4rj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQG-ff-rDd">
+                                <rect key="frame" x="185" y="72" width="45" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="UM0-Wm-zwd"/>
+                                    <constraint firstAttribute="width" constant="45" id="xh9-vk-lRk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="aKY-Db-IhE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5D-A8-9eV">
+                                <rect key="frame" x="230" y="72" width="45" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="NvK-6C-KrQ"/>
+                                    <constraint firstAttribute="width" constant="45" id="Vx7-yp-Y22"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="mMS-tC-yQF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nko-LI-yf7">
+                                <rect key="frame" x="275" y="72" width="45" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="LNg-hg-9IS"/>
+                                    <constraint firstAttribute="width" constant="45" id="uUR-B1-nLw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="WeW-cY-n9r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbI-4H-e92">
+                                <rect key="frame" x="320" y="72" width="45" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="FtW-F6-lXa"/>
+                                    <constraint firstAttribute="height" constant="16" id="P38-8b-czD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="xwt-LY-Brc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ekO-NO-PW3" userLabel="G2 - Lunch">
@@ -1460,6 +1461,122 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLE-B4-GGW" userLabel="Time View">
+                                <rect key="frame" x="0.0" y="64" width="50" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHO-qc-WZ2" userLabel="Day 1 View">
+                                <rect key="frame" x="50" y="64" width="45" height="603"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkd-H8-Unt">
+                                        <rect key="frame" x="0.0" y="8" width="45" height="16"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="7xJ-cd-Hga"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.20000000298023224" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yAc-sq-vRu" userLabel="Day 2 View">
+                                <rect key="frame" x="95" y="64" width="45" height="603"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veK-iJ-Fbp">
+                                        <rect key="frame" x="0.0" y="8" width="45" height="16"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="yYi-k5-Z1V"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.20000000298023224" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vRG-KM-NgI" userLabel="Day 3 View">
+                                <rect key="frame" x="140" y="64" width="45" height="603"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HE-82-pYg" userLabel="3">
+                                        <rect key="frame" x="0.0" y="8" width="45" height="16"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="Vha-uh-NCo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.20000000298023224" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0vk-5U-Y2S" userLabel="Day 4 View">
+                                <rect key="frame" x="185" y="64" width="45" height="603"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FN6-Ur-l5G">
+                                        <rect key="frame" x="0.0" y="8" width="45" height="16"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="Y4b-Y6-g1d"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.20000000298023224" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x2Y-pl-8ei" userLabel="Day 5 View">
+                                <rect key="frame" x="230" y="64" width="45" height="603"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMd-AF-LXe" userLabel="5">
+                                        <rect key="frame" x="0.0" y="8" width="45" height="16"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="5LO-lh-zBj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.20000000298023224" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eqr-eU-y2A" userLabel="Day 6 View">
+                                <rect key="frame" x="275" y="64" width="45" height="603"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUt-O4-2Go" userLabel="6">
+                                        <rect key="frame" x="0.0" y="8" width="45" height="16"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                        <state key="normal" title="6">
+                                            <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="Mnc-eQ-vbg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.20000000298023224" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bsB-CK-un0" userLabel="Day 7 View">
+                                <rect key="frame" x="320" y="64" width="55" height="603"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aU-O3-4uw" userLabel="7">
+                                        <rect key="frame" x="0.0" y="8" width="45" height="16"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                        <state key="normal" title="7">
+                                            <color key="titleColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="highlightDaySelected:" destination="NQj-U2-mXp" eventType="touchUpInside" id="5ZZ-EO-tDc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -1506,7 +1623,7 @@
                             <constraint firstItem="NiL-kP-yks" firstAttribute="width" secondItem="Xug-nF-QFH" secondAttribute="width" id="8Vy-cM-p7d"/>
                             <constraint firstItem="DWU-sS-EWe" firstAttribute="height" secondItem="m4u-qs-sce" secondAttribute="height" id="904-fu-RBr"/>
                             <constraint firstItem="oXR-O5-m5y" firstAttribute="leading" secondItem="ecs-nw-Xep" secondAttribute="leading" id="9GM-Rg-nMs"/>
-                            <constraint firstItem="mTW-42-Pcb" firstAttribute="leading" secondItem="hDZ-Zs-ZON" secondAttribute="trailing" constant="4" id="9IZ-54-CRc"/>
+                            <constraint firstItem="mTW-42-Pcb" firstAttribute="leading" secondItem="hDZ-Zs-ZON" secondAttribute="trailing" id="9IZ-54-CRc"/>
                             <constraint firstItem="UqD-Y2-Zth" firstAttribute="leading" secondItem="UZU-bn-D0Q" secondAttribute="leading" id="9ib-jD-D5U"/>
                             <constraint firstItem="3mg-8E-Gvb" firstAttribute="baseline" secondItem="ekO-NO-PW3" secondAttribute="baseline" id="9pB-Db-htV"/>
                             <constraint firstItem="3mg-8E-Gvb" firstAttribute="leading" secondItem="cOB-7h-iDN" secondAttribute="leading" id="9yk-MW-F4i"/>
@@ -1667,7 +1784,6 @@
                             <constraint firstItem="eSf-Yb-m8O" firstAttribute="baseline" secondItem="4W5-vP-mFY" secondAttribute="baseline" id="mO9-sM-PFq"/>
                             <constraint firstItem="jR1-NK-nKQ" firstAttribute="leading" secondItem="vUc-hW-P1I" secondAttribute="leading" id="mvJ-Lw-ZxA"/>
                             <constraint firstItem="DWU-sS-EWe" firstAttribute="width" secondItem="vUc-hW-P1I" secondAttribute="height" multiplier="46:75" id="n8k-f0-Gkw"/>
-                            <constraint firstItem="hDZ-Zs-ZON" firstAttribute="leading" secondItem="PlS-oh-dTr" secondAttribute="leadingMargin" constant="-14" id="nv9-Qx-RI7"/>
                             <constraint firstItem="DWU-sS-EWe" firstAttribute="width" secondItem="7mW-Uu-UYA" secondAttribute="width" id="nvv-1c-uzf"/>
                             <constraint firstItem="DWU-sS-EWe" firstAttribute="height" secondItem="KPz-Sr-jLz" secondAttribute="height" id="oCn-AE-A0Y"/>
                             <constraint firstItem="DWU-sS-EWe" firstAttribute="width" secondItem="Lq3-yb-Ahi" secondAttribute="height" multiplier="46:75" id="oER-8Z-AxP"/>
@@ -1720,6 +1836,7 @@
                                 <exclude reference="mQD-Dl-a1L"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="xNm-Dd-5Ry"/>
                                 <exclude reference="QFO-rx-W2A"/>
                                 <exclude reference="m9C-z5-kF6"/>
                                 <exclude reference="hpm-eR-MkB"/>
@@ -1795,26 +1912,44 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="WoB-ug-ObM">
-                        <barButtonItem key="leftBarButtonItem" title="Clear" id="QXe-8e-ayR">
-                            <connections>
-                                <action selector="clearSchedule:" destination="NQj-U2-mXp" id="KvJ-3T-DsO"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="GTd-ff-qBZ">
-                            <connections>
-                                <segue destination="iZX-Yo-lsa" kind="presentation" identifier="AddItemViewController" id="4RY-nw-ARt"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem title="Clear" id="QXe-8e-ayR">
+                                <connections>
+                                    <action selector="clearSchedule:" destination="NQj-U2-mXp" id="KvJ-3T-DsO"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="     Fade" id="2uc-9U-K3B">
+                                <connections>
+                                    <action selector="toggleFade:" destination="NQj-U2-mXp" id="NkF-BD-cPP"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="edit" id="GTd-ff-qBZ">
+                                <connections>
+                                    <segue destination="iZX-Yo-lsa" kind="presentation" identifier="AddItemViewController" id="4RY-nw-ARt"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="NetClassroom     " id="x4X-DI-xbS"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="dayFiveButton" destination="I5D-A8-9eV" id="nF6-fk-WAK"/>
+                        <outlet property="dayFiveView" destination="x2Y-pl-8ei" id="Rvx-9D-L8E"/>
                         <outlet property="dayFourButton" destination="eQG-ff-rDd" id="cXl-i7-BBY"/>
+                        <outlet property="dayFourView" destination="0vk-5U-Y2S" id="oMX-ya-cQZ"/>
                         <outlet property="dayOneButton" destination="mTW-42-Pcb" id="zI8-y3-3qx"/>
+                        <outlet property="dayOneView" destination="fHO-qc-WZ2" id="N1r-Sm-Ei3"/>
                         <outlet property="daySevenButton" destination="GbI-4H-e92" id="Ozt-oS-TeZ"/>
+                        <outlet property="daySevenView" destination="bsB-CK-un0" id="odU-53-GPD"/>
                         <outlet property="daySixButton" destination="nko-LI-yf7" id="map-Fi-icJ"/>
+                        <outlet property="daySixView" destination="eqr-eU-y2A" id="gWs-zL-xur"/>
                         <outlet property="dayThreeButton" destination="P8g-u7-4TM" id="bMj-7x-EzS"/>
+                        <outlet property="dayThreeView" destination="vRG-KM-NgI" id="S7D-BD-E7o"/>
                         <outlet property="dayTwoButton" destination="7oc-G8-0R2" id="5e2-h5-qVe"/>
+                        <outlet property="dayTwoView" destination="yAc-sq-vRu" id="qif-YM-xOf"/>
+                        <outlet property="timeView" destination="RLE-B4-GGW" id="NhF-jQ-jNa"/>
                         <outletCollection property="aBlockLabelCollection" destination="Xug-nF-QFH" collectionClass="NSMutableArray" id="g1e-0I-o9g"/>
                         <outletCollection property="aBlockLabelCollection" destination="dp8-pf-21q" collectionClass="NSMutableArray" id="8He-S0-Ybs"/>
                         <outletCollection property="aBlockLabelCollection" destination="3mI-vB-qTX" collectionClass="NSMutableArray" id="4xo-Be-DpK"/>

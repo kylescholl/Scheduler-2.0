@@ -168,109 +168,130 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	@IBOutlet var daySevenButton: UIButton!
 	
 	
+		// UIView OUTLETS
+	
+	@IBOutlet var timeView: UIView!
+	
+	@IBOutlet var dayOneView: UIView!
+	
+	@IBOutlet var dayTwoView: UIView!
+	
+	@IBOutlet var dayThreeView: UIView!
+	
+	@IBOutlet var dayFourView: UIView!
+	
+	@IBOutlet var dayFiveView: UIView!
+	
+	@IBOutlet var daySixView: UIView!
+	
+	@IBOutlet var daySevenView: UIView!
+	
+	
 		// BUTTON FUNCTION(S)
 	
 	@IBAction func highlightDaySelected(sender: UIButton) {
 		
-		let dayOneNumIndex: Int = dayOneGroup.count
-		let dayTwoNumIndex: Int = dayTwoGroup.count
-		let dayThreeNumIndex: Int = dayThreeGroup.count
-		let dayFourNumIndex: Int = dayFourGroup.count
-		let dayFiveNumIndex: Int = dayFiveGroup.count
-		let daySixNumIndex: Int = daySixGroup.count
-		let daySevenNumIndex: Int = daySevenGroup.count
+		let boolForFade: Bool = BoolForFade().bools
+		print(boolForFade)
 		
-		var currentDayIndex: Int
-		
-		let niceBlue: UIColor = UIColor(red: 0, green: 128, blue: 255, alpha: 1)
-		
-		setLabelColorsToDefault(niceBlue)
-		
-		let tag = sender.tag
-		switch tag {
-		case 1:
-			currentDayIndex = dayOneNumIndex
-			for index in 0..<currentDayIndex {
-				
-				dayOneGroup[index].textColor = UIColor.whiteColor()
-				dayOneGroup[index].backgroundColor = niceBlue
-				
-				print("tag: \(tag)")
-			}
-			print("Day 1 pressed")
+		if boolForFade == true {
 			
-		case 2:
-			currentDayIndex = dayTwoNumIndex
-			for index in 0..<currentDayIndex {
+			dimAll()
+		
+			let tag = sender.tag
+			print(tag)
+			switch tag {
 				
-				dayTwoGroup[index].textColor = UIColor.whiteColor()
-				dayTwoGroup[index].backgroundColor = niceBlue
+			case 1:
+				dayOneView.alpha = 0
 				
-				print("tag: \(tag)")
-			}
+			case 2:
+				dayTwoView.alpha = 0
+				
+			case 3:
+				dayThreeView.alpha = 0
 			
-		case 3:
-			currentDayIndex = dayThreeNumIndex
-			for index in 0..<currentDayIndex {
+			case 4:
+				dayFourView.alpha = 0
+			
+			case 5:
+				dayFiveView.alpha = 0
+			
+			case 6:
+				daySixView.alpha = 0
+			
+			case 7:
+				daySevenView.alpha = 0
 				
-				dayThreeGroup[index].textColor = UIColor.whiteColor()
-				dayThreeGroup[index].backgroundColor = niceBlue
-				
-				print("tag: \(tag)")
+			default:
+				print("default")
 			}
-		
-		case 4:
-			currentDayIndex = dayFourNumIndex
-			for index in 0..<currentDayIndex {
-				
-				dayFourGroup[index].textColor = UIColor.whiteColor()
-				dayFourGroup[index].backgroundColor = niceBlue
-				
-				print("tag: \(tag)")
-			}
-		
-		case 5:
-			currentDayIndex = dayFiveNumIndex
-			for index in 0..<currentDayIndex {
-				
-				dayFiveGroup[index].textColor = UIColor.whiteColor()
-				dayFiveGroup[index].backgroundColor = niceBlue
-				
-				print("tag: \(tag)")
-			}
-		
-		case 6:
-			currentDayIndex = daySixNumIndex
-			for index in 0..<currentDayIndex {
-				
-				daySixGroup[index].textColor = UIColor.whiteColor()
-				daySixGroup[index].backgroundColor = niceBlue
-				
-				print("tag: \(tag)")
-			}
-		
-		case 7:
-			currentDayIndex = daySevenNumIndex
-			for index in 0..<currentDayIndex {
-				
-				daySevenGroup[index].textColor = UIColor.whiteColor()
-				daySevenGroup[index].backgroundColor = niceBlue
-				
-				print("tag: \(tag)")
-			}
-		default:
-			print("default")
 		}
 	}
 	
-	
-	let colors = Colors()
-	func refresh() {
-		view.backgroundColor = UIColor.clearColor()
-		let backgroundLayer = colors.gl
-		backgroundLayer.frame = view.frame
-		view.layer.insertSublayer(backgroundLayer, atIndex: 0)
+	func dimAll() {
+		self.timeView.alpha = 0.2
+		self.dayOneView.alpha = 0.2
+		self.dayTwoView.alpha = 0.2
+		self.dayThreeView.alpha = 0.2
+		self.dayFourView.alpha = 0.2
+		self.dayFiveView.alpha = 0.2
+		self.daySixView.alpha = 0.2
+		self.daySevenView.alpha = 0.2
 	}
+	
+	func unDimAll() {
+		self.timeView.alpha = 0
+		self.dayOneView.alpha = 0
+		self.dayTwoView.alpha = 0
+		self.dayThreeView.alpha = 0
+		self.dayFourView.alpha = 0
+		self.dayFiveView.alpha = 0
+		self.daySixView.alpha = 0
+		self.daySevenView.alpha = 0
+	}
+	
+	
+	@IBAction func toggleFade(sender: UIBarButtonItem) {
+		
+			// AlertController
+		let actionSheetController: UIAlertController = UIAlertController(title: "Fade",
+			message: "Choose to either enable or disable the fading effect.",
+			preferredStyle: .Alert)
+		
+		
+			// DISABLE
+		let disableAction: UIAlertAction = UIAlertAction(title: "Disable", style: .Cancel) { action -> Void in
+			
+			let fadeBoolDefaults = false
+			BoolForFade().bools = false
+			
+			self.unDimAll()
+			
+			let defaults = NSUserDefaults.standardUserDefaults()
+			defaults.setBool(fadeBoolDefaults, forKey: "fadeBool")
+			defaults.synchronize()
+		}
+		actionSheetController.addAction(disableAction)
+		
+		
+			// ENABLE
+		let enableAction: UIAlertAction = UIAlertAction(title: "Enable", style: UIAlertActionStyle.Default) { action -> Void in
+			
+			let fadeBoolDefaults = true
+			BoolForFade().bools = true
+			
+			let defaults = NSUserDefaults.standardUserDefaults()
+			defaults.setBool(fadeBoolDefaults, forKey: "fadeBool")
+			defaults.synchronize()
+		}
+		actionSheetController.addAction(enableAction)
+		
+		
+		//Present the AlertController
+		self.presentViewController(actionSheetController, animated: true, completion: nil)
+	}
+	
 	
 	
 	// Sets all of the labels to be white with blue text
@@ -286,11 +307,7 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		
 		for index in 0..<dayOneNumIndex {
 			dayOneGroup[index].textColor = customBlue
-			
-			//	dayOneView.alpha = 0.2
-			//	dayTwoView.alpha = 0.2
-			//	dayThreeView.alpha = 0.2
-			
+			dayOneGroup[index].backgroundColor = UIColor.whiteColor()
 			
 		}
 		
@@ -375,6 +392,7 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		}
 	}
 	
+	
 	// Clears the schedule
 	@IBAction func clearSchedule(sender: UIBarButtonItem) {
 		//Create the AlertController
@@ -395,9 +413,6 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		}
 		actionSheetController.addAction(nextAction)
 	
-	//Change the text color——not working for me
-		//self.window?.tintColor = UIColor.orangeColor()
-	
 	//Present the AlertController
 	self.presentViewController(actionSheetController, animated: true, completion: nil)
 	}
@@ -417,6 +432,11 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	func loadSchedule(){
 		
 		let defaults = NSUserDefaults.standardUserDefaults()
+		
+		BoolForFade().bools = defaults.boolForKey("fadeBool")
+		
+		
+		
 		
 		// Last indexes of each array
 		let aNumIndex = aBlockLabelCollection.count
@@ -466,6 +486,7 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		loadSchedule()
+		unDimAll()
 	}
 	
 	override func didReceiveMemoryWarning() {

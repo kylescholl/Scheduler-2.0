@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F74CA3211BD7E54500F7993D /* Gradience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74CA3201BD7E54500F7993D /* Gradience.swift */; settings = {ASSET_TAGS = (); }; };
+		F74CA3211BD7E54500F7993D /* BoolForFade.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74CA3201BD7E54500F7993D /* BoolForFade.swift */; settings = {ASSET_TAGS = (); }; };
 		F7D4ADFA1BC746190075E676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4ADF91BC746190075E676 /* AppDelegate.swift */; };
 		F7D4ADFC1BC746190075E676 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4ADFB1BC746190075E676 /* ViewController.swift */; };
 		F7D4ADFF1BC746190075E676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D4ADFD1BC746190075E676 /* Main.storyboard */; };
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F74CA3201BD7E54500F7993D /* Gradience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradience.swift; sourceTree = "<group>"; };
+		F74CA3201BD7E54500F7993D /* BoolForFade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolForFade.swift; sourceTree = "<group>"; };
 		F7D4ADF61BC746190075E676 /* Scheduler 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scheduler 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D4ADF91BC746190075E676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7D4ADFB1BC746190075E676 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 				F7D4ADF91BC746190075E676 /* AppDelegate.swift */,
 				F7D4ADFB1BC746190075E676 /* ViewController.swift */,
 				F7D4AE2A1BC7F8FF0075E676 /* AddItemViewController.swift */,
-				F74CA3201BD7E54500F7993D /* Gradience.swift */,
+				F74CA3201BD7E54500F7993D /* BoolForFade.swift */,
 				F7D4ADFD1BC746190075E676 /* Main.storyboard */,
 				F7D4AE031BC746190075E676 /* Assets.xcassets */,
 				F7D4AE051BC746190075E676 /* LaunchScreen.storyboard */,
@@ -268,7 +268,7 @@
 				F7D4AE2B1BC7F8FF0075E676 /* AddItemViewController.swift in Sources */,
 				F7D4ADFC1BC746190075E676 /* ViewController.swift in Sources */,
 				F7D4ADFA1BC746190075E676 /* AppDelegate.swift in Sources */,
-				F74CA3211BD7E54500F7993D /* Gradience.swift in Sources */,
+				F74CA3211BD7E54500F7993D /* BoolForFade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
