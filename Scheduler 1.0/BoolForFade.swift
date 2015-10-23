@@ -11,7 +11,25 @@ import UIKit
 
 class BoolForFade {
 	
-	var _fadeBool: Bool = false
+	let defaults = NSUserDefaults.standardUserDefaults()
+	let fadeBoolDefaults = loadBoolVal()
+	
+	
+	var fadeBool: Bool {
+		get {
+			return fadeBoolDefaults
+		}
+		set {
+			_fadeBool = fadeBoolDefaults
+		}
+	}
+	
+	var _fadeBool: Bool {
+		get {
+			return fadeBool
+		}
+		set{}
+	}
 	
 	var bools: Bool {
 		get {
@@ -19,9 +37,26 @@ class BoolForFade {
 			return _fadeBool
 		}
 		set (newVal) {
+			print("newVal: \(newVal)")
 			_fadeBool = newVal
 			print("set: \(_fadeBool)")
-			return _fadeBool
 		}
 	}
 }
+
+func loadBoolVal() -> Bool {
+	let defaults = NSUserDefaults.standardUserDefaults()
+	let fadeBoolDefaults: Bool = defaults.boolForKey("fadeBool")
+	return fadeBoolDefaults
+}
+
+
+
+
+
+
+
+
+
+
+

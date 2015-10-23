@@ -17,6 +17,7 @@
 		F7D4AE121BC7461A0075E676 /* Scheduler_1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4AE111BC7461A0075E676 /* Scheduler_1_0Tests.swift */; };
 		F7D4AE1D1BC7461A0075E676 /* Scheduler_1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4AE1C1BC7461A0075E676 /* Scheduler_1_0UITests.swift */; };
 		F7D4AE2B1BC7F8FF0075E676 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4AE2A1BC7F8FF0075E676 /* AddItemViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		F7F838D11BDAA4ED00E49914 /* NetClassroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F838D01BDAA4ED00E49914 /* NetClassroomViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		F7D4AE1C1BC7461A0075E676 /* Scheduler_1_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler_1_0UITests.swift; sourceTree = "<group>"; };
 		F7D4AE1E1BC7461A0075E676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7D4AE2A1BC7F8FF0075E676 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		F7F838D01BDAA4ED00E49914 /* NetClassroomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetClassroomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +105,10 @@
 		F7D4ADF81BC746190075E676 /* Scheduler 1.0 */ = {
 			isa = PBXGroup;
 			children = (
-				F7D4ADF91BC746190075E676 /* AppDelegate.swift */,
-				F7D4ADFB1BC746190075E676 /* ViewController.swift */,
-				F7D4AE2A1BC7F8FF0075E676 /* AddItemViewController.swift */,
-				F74CA3201BD7E54500F7993D /* BoolForFade.swift */,
-				F7D4ADFD1BC746190075E676 /* Main.storyboard */,
+				F7F838D31BDAABF700E49914 /* Supporting Files */,
+				F7F838D21BDAABC500E49914 /* ViewControllers */,
+				F7F838D41BDAAC0700E49914 /* Storyboard */,
 				F7D4AE031BC746190075E676 /* Assets.xcassets */,
-				F7D4AE051BC746190075E676 /* LaunchScreen.storyboard */,
 				F7D4AE081BC746190075E676 /* Info.plist */,
 				F7D4AE001BC746190075E676 /* Scheduler_1_0.xcdatamodeld */,
 			);
@@ -132,6 +131,34 @@
 				F7D4AE1E1BC7461A0075E676 /* Info.plist */,
 			);
 			path = "Scheduler 1.0UITests";
+			sourceTree = "<group>";
+		};
+		F7F838D21BDAABC500E49914 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F7D4ADFB1BC746190075E676 /* ViewController.swift */,
+				F7D4AE2A1BC7F8FF0075E676 /* AddItemViewController.swift */,
+				F7F838D01BDAA4ED00E49914 /* NetClassroomViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F7F838D31BDAABF700E49914 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7D4ADF91BC746190075E676 /* AppDelegate.swift */,
+				F74CA3201BD7E54500F7993D /* BoolForFade.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7F838D41BDAAC0700E49914 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F7D4ADFD1BC746190075E676 /* Main.storyboard */,
+				F7D4AE051BC746190075E676 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7F838D11BDAA4ED00E49914 /* NetClassroomViewController.swift in Sources */,
 				F7D4AE021BC746190075E676 /* Scheduler_1_0.xcdatamodeld in Sources */,
 				F7D4AE2B1BC7F8FF0075E676 /* AddItemViewController.swift in Sources */,
 				F7D4ADFC1BC746190075E676 /* ViewController.swift in Sources */,

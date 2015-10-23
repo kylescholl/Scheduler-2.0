@@ -1461,7 +1461,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <view alpha="0.20000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLE-B4-GGW" userLabel="Time View">
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLE-B4-GGW" userLabel="Time View">
                                 <rect key="frame" x="0.0" y="64" width="50" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -1481,7 +1481,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view alpha="0.20000000298023224" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yAc-sq-vRu" userLabel="Day 2 View">
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yAc-sq-vRu" userLabel="Day 2 View">
                                 <rect key="frame" x="95" y="64" width="45" height="603"/>
                                 <subviews>
                                     <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veK-iJ-Fbp">
@@ -1497,7 +1497,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view alpha="0.20000000298023224" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vRG-KM-NgI" userLabel="Day 3 View">
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vRG-KM-NgI" userLabel="Day 3 View">
                                 <rect key="frame" x="140" y="64" width="45" height="603"/>
                                 <subviews>
                                     <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HE-82-pYg" userLabel="3">
@@ -1513,7 +1513,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view alpha="0.20000000298023224" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0vk-5U-Y2S" userLabel="Day 4 View">
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0vk-5U-Y2S" userLabel="Day 4 View">
                                 <rect key="frame" x="185" y="64" width="45" height="603"/>
                                 <subviews>
                                     <button hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FN6-Ur-l5G">
@@ -1529,7 +1529,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view alpha="0.20000000298023224" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x2Y-pl-8ei" userLabel="Day 5 View">
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x2Y-pl-8ei" userLabel="Day 5 View">
                                 <rect key="frame" x="230" y="64" width="45" height="603"/>
                                 <subviews>
                                     <button hidden="YES" opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMd-AF-LXe" userLabel="5">
@@ -1545,7 +1545,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view alpha="0.20000000298023224" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eqr-eU-y2A" userLabel="Day 6 View">
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eqr-eU-y2A" userLabel="Day 6 View">
                                 <rect key="frame" x="275" y="64" width="45" height="603"/>
                                 <subviews>
                                     <button hidden="YES" opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUt-O4-2Go" userLabel="6">
@@ -1561,7 +1561,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view alpha="0.20000000298023224" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bsB-CK-un0" userLabel="Day 7 View">
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bsB-CK-un0" userLabel="Day 7 View">
                                 <rect key="frame" x="320" y="64" width="55" height="603"/>
                                 <subviews>
                                     <button hidden="YES" opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aU-O3-4uw" userLabel="7">
@@ -1930,7 +1930,11 @@
                                     <segue destination="iZX-Yo-lsa" kind="presentation" identifier="AddItemViewController" id="4RY-nw-ARt"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="NetClassroom     " id="x4X-DI-xbS"/>
+                            <barButtonItem title="NetClassroom     " id="x4X-DI-xbS">
+                                <connections>
+                                    <segue destination="pJn-NO-n8N" kind="presentation" identifier="NetClassroomViewController" id="b7y-p5-JK3"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -2054,6 +2058,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdl-aG-lUo" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="990.5" y="337.5"/>
+        </scene>
+        <!--Net Classroom View Controller-->
+        <scene sceneID="vse-Ln-sdr">
+            <objects>
+                <viewController id="PnU-CZ-h7I" customClass="NetClassroomViewController" customModule="Scheduler_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="64d-bm-aK7"/>
+                        <viewControllerLayoutGuide type="bottom" id="CIS-RV-69q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VsA-Rk-gV1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hpb-li-oXb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="609"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWg-zr-goQ">
+                                <rect key="frame" x="161" y="617" width="53" height="30"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refresh:" destination="PnU-CZ-h7I" eventType="touchUpInside" id="YdW-eF-wGr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="14C-M0-VXS">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="PbM-1f-nEW">
+                            <connections>
+                                <action selector="done:" destination="PnU-CZ-h7I" id="3AO-k3-9aN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="aQa-QC-pZd" id="gbR-OP-zZS"/>
+                        <outlet property="webView" destination="Hpb-li-oXb" id="YmI-jz-bKI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bwN-wz-GHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="aQa-QC-pZd">
+                    <connections>
+                        <outlet property="delegate" destination="PnU-CZ-h7I" id="Xkn-TN-jPr"/>
+                        <outlet property="searchContentsController" destination="PnU-CZ-h7I" id="lLv-Iq-GhH"/>
+                        <outlet property="searchResultsDataSource" destination="PnU-CZ-h7I" id="KY5-cq-PwI"/>
+                        <outlet property="searchResultsDelegate" destination="PnU-CZ-h7I" id="fD4-bJ-QQO"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="2161.5" y="719.5"/>
         </scene>
         <!--Add Item View Controller-->
         <scene sceneID="dT6-aO-5IR">
@@ -2220,6 +2275,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bCr-Ll-ILu">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="yub-Za-ZTb"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="sKV-V2-lM8">
                             <connections>
                                 <action selector="save:" destination="jox-YT-aSj" id="XIv-G1-R0b"/>
@@ -2239,7 +2295,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EWu-Dm-i3y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2135.5" y="337.5"/>
+            <point key="canvasLocation" x="2161.5" y="-44.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="t0a-bc-yRg">
@@ -3663,7 +3719,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hud-QZ-wxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564.5" y="-26.5"/>
+            <point key="canvasLocation" x="1584.5" y="-44.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1DQ-VJ-bPM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pJn-NO-n8N" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YU4-1f-oc4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PnU-CZ-h7I" kind="relationship" relationship="rootViewController" id="ftz-46-IR6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fah-gH-8Qf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1584.5" y="719.5"/>
         </scene>
     </scenes>
 </document>

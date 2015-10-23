@@ -101,6 +101,13 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		}
 	}
 	
+	
+	
+	
+	
+	
+	
+	
 					// OUTLETS //
 	
 		// LETTER BLOCKS (diagonal) //
@@ -187,6 +194,16 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	@IBOutlet var daySevenView: UIView!
 	
 	
+	/*
+	func test(){
+		let tap = UITapGestureRecognizer(target: self, action: Selector("handleTap:"))
+		tap.delegate = self
+		myView.addGesture(tap)
+	}
+	*/
+	
+	
+	
 		// BUTTON FUNCTION(S)
 	
 	@IBAction func highlightDaySelected(sender: UIButton) {
@@ -195,7 +212,7 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		print(boolForFade)
 		
 		if boolForFade == true {
-			
+			print("boolForFade if statement ran")
 			dimAll()
 		
 			let tag = sender.tag
@@ -345,6 +362,8 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	
 	
 	
+	
+	
 	// used for clearing all blocks
 	func setLabelText(someString: String) {
 		
@@ -417,8 +436,10 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 	self.presentViewController(actionSheetController, animated: true, completion: nil)
 	}
 	
-	//runs when opening AddItemViewController
+	
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		
+		// AddItemViewController
 		if segue.identifier == "AddItemViewController" {
 			let navigationController = segue.destinationViewController as? UINavigationController
 			let addItemViewController = navigationController?.topViewController as? AddItemViewController
@@ -427,15 +448,25 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 				viewController.delegate = self
 			}
 		}
+		
+		// NetClassroomViewController
+		if segue.identifier == "NetClassroomViewController" {
+			//let navigationController = segue.destinationViewController as? UINavigationController
+			//let netClassroomViewController = navigationController?.topViewController as? NetClassroomViewController
+			
+			/*
+			if let viewController = netClassroomViewController {
+				viewController.delegate = self
+			}
+			*/
+		}
 	}
+	
 	
 	func loadSchedule(){
 		
 		let defaults = NSUserDefaults.standardUserDefaults()
-		
 		BoolForFade().bools = defaults.boolForKey("fadeBool")
-		
-		
 		
 		
 		// Last indexes of each array
@@ -483,10 +514,25 @@ class ViewController: UIViewController, AddItemViewControllerDelegate {
 		}
 	}
 	
+	
+	
+	
+	
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		loadSchedule()
-		unDimAll()
+		
+		let defaults = NSUserDefaults.standardUserDefaults()
+		let fade: Bool = defaults.boolForKey("fadeBool")
+		if fade == true {
+			print("dimAll() ran")
+			dimAll()
+			// timeView.alpha = 0.0
+		} else {
+			print("unDimAll() ran")
+			unDimAll()
+		}
 	}
 	
 	override func didReceiveMemoryWarning() {
